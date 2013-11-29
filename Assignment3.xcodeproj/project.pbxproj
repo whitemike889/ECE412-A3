@@ -18,6 +18,18 @@
 		4C97192F1847EC1A00640F1A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C97190E1847EC1A00640F1A /* Cocoa.framework */; };
 		4C9719371847EC1A00640F1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C9719351847EC1A00640F1A /* InfoPlist.strings */; };
 		4C9719391847EC1A00640F1A /* Assignment3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9719381847EC1A00640F1A /* Assignment3Tests.m */; };
+		4C9719531847FAEB00640F1A /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 4C9719521847FAEB00640F1A /* shader.frag */; };
+		4C9719551847FAF700640F1A /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 4C9719541847FAF700640F1A /* shader.vert */; };
+		4C9719571847FE5800640F1A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9719561847FE5800640F1A /* OpenGL.framework */; };
+		4C9719591847FE6600640F1A /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C9719581847FE6600640F1A /* GLUT.framework */; };
+		4C97195A1848014D00640F1A /* shader.frag in Resources */ = {isa = PBXBuildFile; fileRef = 4C9719521847FAEB00640F1A /* shader.frag */; };
+		4C97195B1848015200640F1A /* shader.vert in Resources */ = {isa = PBXBuildFile; fileRef = 4C9719541847FAF700640F1A /* shader.vert */; };
+		4C9719621849108C00640F1A /* ViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9719611849108C00640F1A /* ViewOne.m */; };
+		4C971965184910B400640F1A /* ViewTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C971964184910B400640F1A /* ViewTwo.m */; };
+		4C9719681849112D00640F1A /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9719671849112D00640F1A /* Model.m */; };
+		4C97196B1849113C00640F1A /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C97196A1849113C00640F1A /* Controller.m */; };
+		4C9719711849115A00640F1A /* Matrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9719701849115A00640F1A /* Matrix.m */; };
+		4C9719741849133F00640F1A /* Shader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9719731849133F00640F1A /* Shader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +62,23 @@
 		4C9719341847EC1A00640F1A /* Assignment3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Assignment3Tests-Info.plist"; sourceTree = "<group>"; };
 		4C9719361847EC1A00640F1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C9719381847EC1A00640F1A /* Assignment3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment3Tests.m; sourceTree = "<group>"; };
+		4C9719521847FAEB00640F1A /* shader.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader.frag; path = Shaders/shader.frag; sourceTree = "<group>"; };
+		4C9719541847FAF700640F1A /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; name = shader.vert; path = Shaders/shader.vert; sourceTree = "<group>"; };
+		4C9719561847FE5800640F1A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4C9719581847FE6600640F1A /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		4C97195F18484B4800640F1A /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		4C9719601849108C00640F1A /* ViewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewOne.h; path = Main/ViewOne.h; sourceTree = "<group>"; };
+		4C9719611849108C00640F1A /* ViewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewOne.m; path = Main/ViewOne.m; sourceTree = "<group>"; };
+		4C971963184910B400640F1A /* ViewTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewTwo.h; path = Main/ViewTwo.h; sourceTree = "<group>"; };
+		4C971964184910B400640F1A /* ViewTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewTwo.m; path = Main/ViewTwo.m; sourceTree = "<group>"; };
+		4C9719661849112D00640F1A /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = Main/Model.h; sourceTree = "<group>"; };
+		4C9719671849112D00640F1A /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = Main/Model.m; sourceTree = "<group>"; };
+		4C9719691849113C00640F1A /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Controller.h; path = Main/Controller.h; sourceTree = "<group>"; };
+		4C97196A1849113C00640F1A /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Controller.m; path = Main/Controller.m; sourceTree = "<group>"; };
+		4C97196F1849115A00640F1A /* Matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Matrix.h; path = Main/Matrix.h; sourceTree = "<group>"; };
+		4C9719701849115A00640F1A /* Matrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Matrix.m; path = Main/Matrix.m; sourceTree = "<group>"; };
+		4C9719721849133F00640F1A /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = Main/Shader.h; sourceTree = "<group>"; };
+		4C9719731849133F00640F1A /* Shader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shader.m; path = Main/Shader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9719591847FE6600640F1A /* GLUT.framework in Frameworks */,
+				4C9719571847FE5800640F1A /* OpenGL.framework in Frameworks */,
 				4C97190F1847EC1A00640F1A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +126,8 @@
 		4C97190D1847EC1A00640F1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C9719581847FE6600640F1A /* GLUT.framework */,
+				4C9719561847FE5800640F1A /* OpenGL.framework */,
 				4C97190E1847EC1A00640F1A /* Cocoa.framework */,
 				4C97192D1847EC1A00640F1A /* XCTest.framework */,
 				4C9719101847EC1A00640F1A /* Other Frameworks */,
@@ -115,10 +148,19 @@
 		4C9719141847EC1A00640F1A /* Assignment3 */ = {
 			isa = PBXGroup;
 			children = (
-				4C9719201847EC1A00640F1A /* AppDelegate.h */,
-				4C9719211847EC1A00640F1A /* AppDelegate.m */,
-				4C9719231847EC1A00640F1A /* MainMenu.xib */,
-				4C9719261847EC1A00640F1A /* Images.xcassets */,
+				4C9719511847FACE00640F1A /* Shaders */,
+				4C9719601849108C00640F1A /* ViewOne.h */,
+				4C9719611849108C00640F1A /* ViewOne.m */,
+				4C971963184910B400640F1A /* ViewTwo.h */,
+				4C971964184910B400640F1A /* ViewTwo.m */,
+				4C9719721849133F00640F1A /* Shader.h */,
+				4C9719731849133F00640F1A /* Shader.m */,
+				4C9719661849112D00640F1A /* Model.h */,
+				4C9719671849112D00640F1A /* Model.m */,
+				4C9719691849113C00640F1A /* Controller.h */,
+				4C97196A1849113C00640F1A /* Controller.m */,
+				4C97196F1849115A00640F1A /* Matrix.h */,
+				4C9719701849115A00640F1A /* Matrix.m */,
 				4C9719151847EC1A00640F1A /* Supporting Files */,
 			);
 			path = Assignment3;
@@ -127,11 +169,16 @@
 		4C9719151847EC1A00640F1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C9719201847EC1A00640F1A /* AppDelegate.h */,
+				4C9719211847EC1A00640F1A /* AppDelegate.m */,
+				4C9719231847EC1A00640F1A /* MainMenu.xib */,
+				4C9719261847EC1A00640F1A /* Images.xcassets */,
 				4C9719161847EC1A00640F1A /* Assignment3-Info.plist */,
 				4C9719171847EC1A00640F1A /* InfoPlist.strings */,
 				4C97191A1847EC1A00640F1A /* main.m */,
 				4C97191C1847EC1A00640F1A /* Assignment3-Prefix.pch */,
 				4C97191D1847EC1A00640F1A /* Credits.rtf */,
+				4C97195F18484B4800640F1A /* Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -152,6 +199,15 @@
 				4C9719351847EC1A00640F1A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4C9719511847FACE00640F1A /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				4C9719521847FAEB00640F1A /* shader.frag */,
+				4C9719541847FAF700640F1A /* shader.vert */,
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +286,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C97195B1848015200640F1A /* shader.vert in Resources */,
+				4C97195A1848014D00640F1A /* shader.frag in Resources */,
 				4C9719191847EC1A00640F1A /* InfoPlist.strings in Resources */,
 				4C9719271847EC1A00640F1A /* Images.xcassets in Resources */,
 				4C97191F1847EC1A00640F1A /* Credits.rtf in Resources */,
@@ -252,8 +310,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9719531847FAEB00640F1A /* shader.frag in Sources */,
 				4C9719221847EC1A00640F1A /* AppDelegate.m in Sources */,
+				4C9719621849108C00640F1A /* ViewOne.m in Sources */,
+				4C97196B1849113C00640F1A /* Controller.m in Sources */,
+				4C9719741849133F00640F1A /* Shader.m in Sources */,
 				4C97191B1847EC1A00640F1A /* main.m in Sources */,
+				4C9719681849112D00640F1A /* Model.m in Sources */,
+				4C9719551847FAF700640F1A /* shader.vert in Sources */,
+				4C971965184910B400640F1A /* ViewTwo.m in Sources */,
+				4C9719711849115A00640F1A /* Matrix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Assignment3/Assignment3-Prefix.pch";
@@ -396,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Assignment3/Assignment3-Prefix.pch";
